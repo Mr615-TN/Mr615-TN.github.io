@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandit Level 0 Walkthrough</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html">← Back to Bandit Levels</a>
+        <h1>Bandit Level 0 → Level 1</h1>
+    </header>
+
+    <main>
+        <h3>Objective</h3>
+        <p>Log into the game server using SSH on port 2220 with the username <code>bandit0</code>.</p>
+
+        <h3>Commands Used</h3>
+        <ul>
+            <li><code>ssh</code> - Open a secure shell connection to a remote server.</li>
+        </ul>
+
+        <h3>The Walkthrough</h3>
+        <p>To connect to the OverTheWire servers, open your terminal and execute the following command:</p>
+        
+        <!-- The <pre> and <code> tags keep terminal commands formatted properly -->
+        <pre><code>ssh bandit0@bandit.labs.overthewire.org -p 2220</code></pre>
+
+        <p>When prompted for the password, enter the default password: <code>bandit0</code>.</p>
+
+        <h3>Key Takeaway</h3>
+        <p>Learned how to specify a non-standard port flag (<code>-p</code>) using SSH instead of defaulting to port 22.</p>
+    </main>
+</body>
+</html>
+
