@@ -3,35 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bandit Level 0 Walkthrough</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Bandit Level 0 Walkthrough | Tanish Neema</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Site-wide styles (fixed path: was ../css/style.css) -->
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <header>
-        <a href="./index.html">← Back to Bandit Levels</a>
-        <h1>Bandit Level 0 → Level 1</h1>
-    </header>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Portfolio<span class="accent">.</span></a>
+            <a href="./index.html" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to Bandit Levels
+            </a>
+        </div>
+    </nav>
 
-    <main>
-        <h3>Objective</h3>
-        <p>Log into the game server using SSH on port 2220 with the username <code>bandit0</code>.</p>
+    <!-- Header -->
+    <section class="hero page-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Bandit Level 0 → Level 1</p>
+                <h1>SSH Basics</h1>
+            </div>
+        </div>
+    </section>
 
-        <h3>Commands Used</h3>
-        <ul>
-            <li><code>ssh</code> - Open a secure shell connection to a remote server.</li>
-        </ul>
+    <!-- Write-up -->
+    <section class="experience">
+        <div class="container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Objective</h3>
+                        </div>
+                        <p>
+                            Log into the game server using SSH on port 2220 with the username
+                            <code>bandit0</code>.
+                        </p>
+                    </div>
+                </div>
 
-        <h3>The Walkthrough</h3>
-        <p>To connect to the OverTheWire servers, open your terminal and execute the following command:</p>
-        
-        <!-- The <pre> and <code> tags keep terminal commands formatted properly -->
-        <pre><code>ssh bandit0@bandit.labs.overthewire.org -p 2220</code></pre>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Commands Used</h3>
+                        </div>
+                        <ul>
+                            <li><code>ssh</code> — Open a secure shell connection to a remote server.</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <p>When prompted for the password, enter the default password: <code>bandit0</code>.</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>The Walkthrough</h3>
+                        </div>
+                        <p>To connect to the OverTheWire servers, open your terminal and run:</p>
+                        <pre><code>ssh bandit0@bandit.labs.overthewire.org -p 2220</code></pre>
+                        <p>When prompted for the password, enter the default password: <code>bandit0</code>.</p>
+                    </div>
+                </div>
 
-        <h3>Key Takeaway</h3>
-        <p>Learned how to specify a non-standard port flag (<code>-p</code>) using SSH instead of defaulting to port 22.</p>
-    </main>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Key Takeaway</h3>
+                        </div>
+                        <p>
+                            Learned how to specify a non-standard port flag (<code>-p</code>) using SSH
+                            instead of defaulting to port 22.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
 </body>
 </html>
-

@@ -3,24 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My OverTheWire Bandit Journey</title>
-    <!-- Link your existing resume CSS here if you want it to look the same -->
-    <link rel="stylesheet" href="../style.css"> 
+    <title>OverTheWire Bandit Walkthroughs | Tanish Neema</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Site-wide styles (fixed path: was ../style.css / ../css/style.css) -->
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html">← Back to Resume</a>
-        <h1>OverTheWire: Bandit Walkthroughs</h1>
-        <p>Documenting my cybersecurity wargame progress and Linux concepts learned.</p>
-    </header>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Portfolio<span class="accent">.</span></a>
+            <a href="../index.html#projects" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+        </div>
+    </nav>
 
-    <main>
-        <h2>Completed Levels</h2>
-        <ul>
-            <li><a href="./level0.html">Level 0 → Level 1</a> (SSH Basics)</li>
-            <!-- You will add more bullets here as you complete levels -->
-        </ul>
-    </main>
+    <!-- Header -->
+    <section class="hero page-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Write-ups</p>
+                <h1>OverTheWire: Bandit Walkthroughs</h1>
+                <p class="hero-description">
+                    Documenting my cybersecurity wargame progress, the Linux commands I used,
+                    and the concepts I learned at each level.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Levels -->
+    <section class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Completed Levels</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Level 0 → Level 1</h3>
+                        <div class="project-links">
+                            <a href="./level0.html" title="Read Write-up">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        SSH basics — connecting to a remote server on a non-standard port.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SSH</span>
+                        <span class="tech-tag">Linux</span>
+                    </div>
+                </div>
+
+                <!-- Add a new .project-card block here for each new level you complete -->
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
 </body>
 </html>
-
